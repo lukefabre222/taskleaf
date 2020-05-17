@@ -50,10 +50,13 @@ RSpec.describe 'タスク管理機能', type: :system do
     before do
       visit new_task_path
       fill_in "task_name", with: task_name
-      click_button '登録する'
+      click_button '確認'
     end
 
     context '新規作成画面で名称を入力したとき' do
+      before do
+        click_button '登録'
+      end
       let(:task_name) { '新規作成のテストを書く' }
 
       it '正常に登録される' do
