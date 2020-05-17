@@ -55,7 +55,8 @@ gem 'slim-rails'
 gem 'html2slim'
 gem 'bootstrap'
 gem 'rails-i18n', '~> 5.1' 
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
+gem 'mini_racer', platforms: :ruby
 gem 'bcrypt', '~> 3.1.7'
 gem 'rails_autolink'
 gem 'rubocop', require: false
