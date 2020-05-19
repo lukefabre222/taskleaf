@@ -62,3 +62,4 @@ gem 'rails_autolink'
 gem 'rubocop', require: false
 gem 'rubocop-rails'
 gem 'ransack'
+gem 'roo'
