@@ -63,3 +63,7 @@ gem 'rubocop', require: false
 gem 'rubocop-rails'
 gem 'ransack'
 gem 'roo'
+gem 'kaminari'
+gem 'faker'
+gem 'sidekiq'
+gem 'rails-ujs'

@@ -1,8 +1,10 @@
 h1 ユーザー一覧
-
-= link_to '新規登録', new_adminn_user_path, class: 'btn btn-primary'
+.mb-3
+  = link_to '新規登録', new_adminn_user_path, class: 'btn btn-primary'
 
 .mb-3
+  = paginate @users
+  = page_entries_info @users
 table.table.table-hover
   thead.thead-default
     tr
@@ -18,8 +20,8 @@ table.table.table-hover
         td= link_to user.name, [:adminn, user]
         td= user.email
         td= user.admin? ? 'あり' : 'なし'
-        td= user.created_at
-        td= user.updated_at
+        td= l user.created_at
+        td= l user.updated_at
         td
           = link_to "編集", edit_adminn_user_path(user), class: 'btn btn-primary mr-3'
           = link_to "削除", [:adminn, user], method: :delete, datta: { confirm: "ユーザー「#{user.name}」を削除します。よろしいですか？"}, class: 'btn btn-primary'

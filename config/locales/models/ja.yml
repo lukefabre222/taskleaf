@@ -7,22 +7,22 @@ ja:
           has_one: "%{record}が存在しているので削除できません"
           has_many: "%{record}が存在しているので削除できません"
     models:
-      tasks: タスク
-      users: ユーザー
+      tasks: "タスク"
+      users: "ユーザー"
     attributes:
       task:
-        id: ID
-        name: タスク名
-        description: 詳細
-        image: 画像
-        created_at: 登録日時
-        updated_at: 更新日時
+        id: "ID"
+        name: "タスク名"
+        description: "詳細"
+        image: "画像"
+        created_at: "登録日時"
+        updated_at: "更新日時"
       user:
-        id: ID
-        name: ユーザー名
-        password: パスワード
-        password_confirmation: パスワード(確認)
-        email: メールアドレス
-        admin: 管理者権限
-        created_at: 登録日時
-        updated_at: 更新日時
+        id: "ID"
+        name: "ユーザー名"
+        password: "パスワード"
+        password_confirmation: "パスワード(確認)"
+        email: "メールアドレス"
+        admin: "管理者権限"
+        created_at: "登録日時"
+        updated_at: "更新日時"
