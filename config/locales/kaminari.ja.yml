@@ -10,7 +10,7 @@ ja:
     page_entries_info: 
       one_page:
         display_entries:
-          zero: "%{entry_name}がありません"
+          zero: "%{entry_name}がありません."
           one: "1件の%{entry_name}が表示されています"
           other: "%{count}件の%{entry_name}が表示されています"
       more_pages:
